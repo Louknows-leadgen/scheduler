@@ -1,0 +1,265 @@
+@charset "utf-8";
+body {
+	margin-left: -150px;
+	margin-right: 0px;
+	background-color: #ffffff;
+}
+/*-------------------start modified css--------------------*/
+#bg
+	{
+		overflow: hidden;
+		float: left;
+		text-align: center;
+		margin-top: 100px;
+	}
+	
+	#bg h1
+		{
+			margin: 0 auto;
+			background: url('images/Logo.png') no-repeat transparent 0 0 scroll;
+			width: 312px;
+			height: 108px;
+		}
+		#bg h1 a
+			{
+				display: block;
+				width: 312px;
+				height: 108px;
+				font-size: 0px;
+			}
+#center
+	{
+		background: url('images/login_background.png') no-repeat transparent 0 0 scroll;
+		width: 648px;
+		height: 355px;
+		text-align: left;
+	}
+	#center img
+		{
+			overflow: hidden;
+			float: left;
+			margin: 27px 10px 0 27px;
+		}
+	#center table
+		{
+			overflow: hidden;
+			float: left;
+			margin: 50px 0 0 10px;
+		}
+	#login_tr
+		{
+			overflow: hidden;
+			float: left;
+			height: 35px;
+		}
+	#login_text
+		{
+			overflow: hidden;
+			float: left;
+			font-family: Georgia, serif;
+			font-size: 20px;
+			color: #13355f;
+			margin-top: 10px;
+		}
+		#center form
+			{
+				overflow: hidden;
+				float: left;
+			}
+		#center label
+			{
+				overflow: hidden;
+				float: left;
+				margin-top:10px;
+				font-family: Georgia, serif;
+			}
+	#label_employee
+		{
+			margin-top: -1px !important;
+			font-size: 12px !important;
+			
+		}
+	#agentid
+		{
+			overflow: hidden !important;
+			float: left !important;
+			margin-top: 2px !important;
+		}
+	#label2
+		{
+			overflow: hidden !important;
+			float: left !important;
+			margin-top: 5px !important;
+			font-size: 12px !important;
+		}
+		#center input
+			{
+				background: url(images/input_bg.jpg) repeat-x;
+				height: 25px;
+				width: 230px;
+				border-radius: 6px;
+				border: solid 1px #134078;
+				color: #ffffff;
+				padding: 0 10px 0 10px;
+			}
+	#button
+		{
+			overflow: hidden;
+			float: left;
+			background: url(images/button_bg.png) no-repeat transparent 0 0 scroll !important;
+			width: 60px  !important;
+			height: 26px !important;
+			border: none !important;
+			color: #ffffff;
+			font-weight: bold;
+		}
+/*-------------------end modified css----------------------*/
+#main
+	{
+		margin: auto;
+		width: 485px;
+		height: 210px;
+	}
+#layer01_holder {
+	width:563px;
+	height:157px;
+	margin:auto;
+}
+#layer01_holder #left {
+	width:96px;
+	height:157px;
+	float:left;
+	display:block;
+}
+#layer01_holder #center {
+	width:220px;
+	height:157px;
+	float:left;
+	display:block;
+}
+#layer01_holder #right {
+	width:247px;
+	height:157px;
+	float:left;
+	display:block;
+}
+#layer02_holder {
+	width:563px;
+	height:164px;
+	margin:auto;
+}
+#layer02_holder #left {
+	width:96px;
+	height:164px;
+	float:left;
+	display:block;
+}
+#layer02_holder #center {
+	width:220px;
+	height:164px;
+	float:left;
+	display:block;
+}
+#layer02_holder #right {
+	width:247px;
+	height:164px;
+	float:left;
+	display:block;
+}
+#layer03_holder {
+	width:563px;
+	height:220px;
+	background: url('images/bg_index.png') no-repeat transparent 0 0 ;
+}
+#layer03_holder #left {
+	width:96px;
+	height:124px;
+	float:left;
+	display:block;
+}
+#layer03_holder #center {
+	width:220px;
+	height:124px;
+	float:left;
+	display:block;
+	font-family: Verdana;
+	color: #FFFF00;
+	font-size: 12px;
+	font-weight: bold;
+}
+#layer03_holder #right {
+	width:247px;
+	height:124px;
+	float:left;
+	display:block;
+}
+#layer04_holder {
+	width:563px;
+	height:115px;
+	margin:auto;
+}
+#layer04_holder #left {
+	width:96px;
+	height:115px;
+	float:left;
+	display:block;
+}
+#layer04_holder #center {
+	width:220px;
+	height:115px;
+	float:left;
+	display:block;
+	text-align:left;
+	padding-top:30px;
+	margin-bottom:-35px;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: Arial;
+}
+#layer04_holder #center a:link, a:visited {
+	color: #03C;
+	text-decoration:none;
+}
+#layer04_holder #center a:hover {
+	color: #FF9900;
+	text-decoration:underline;
+}
+#layer04_holder #right {
+	width:247px;
+	height:115px;
+	float:left;
+	display:block;
+}
+#layer05_holder {
+	width:563px;
+	height:auto;
+	margin:auto;
+	color: #393939;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-left: 75px;
+	;
+}
+#layer03_holder #center form {
+	text-align:justify;
+	margin:0px;
+}
+#layer03_holder #center label {
+	font-size:10px;
+	color: #FFFFFF;
+}
+#layer03_holder #center input.thisinput{
+	background-color:#454544;
+	border:solid 1px #d2d0b5;
+	color: #FFFFFF;
+}
+#layer03_holder #center #button {
+	margin-top:5px;
+	/*background-color: #CCCCCC;
+	color: #454544;*/
+	border: 3px double #454544;
+	margin-left: 169px;
+	right: 0px;
+	width: 50px;
+}

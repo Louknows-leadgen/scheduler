@@ -1,0 +1,24 @@
+{
+  "name": "payroll",
+  "description": "payroll",
+  "main": "",
+  "authors": [
+    "Raymark Binondo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "pay"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^5.0.6"
+  }
+}

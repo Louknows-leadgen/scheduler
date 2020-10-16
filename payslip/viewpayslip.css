@@ -1,0 +1,762 @@
+h3#h3payroll
+    {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-weight: normal;
+        font-size: 25px;
+        color: #232323;
+        margin: 20px 0 0 30px;
+    }
+    #form_payroll
+        {
+            margin: 20px 0 0 30px;
+            
+        }
+    #payroll_select
+        {
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+        }
+    #payroll_submit1
+        {
+            background: #2d63a9;
+            border-radius: 5px;
+            border: none;
+            height: 30px;
+            width: 70px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+#actual_payslip2
+    {
+        overflow: hidden;
+        float: left;
+        width: 750px;
+        margin: 100px 10px 10px 30px;
+        
+    }
+#overflow_design
+    {
+        float: left;
+        width: 790px;
+        
+    }
+/*----------New Payslip Design------------*/
+#dci_payslip
+    {
+        border: solid 1px #2e2e2e;
+        margin-left: 16px;
+        background: #ffffff;
+    }
+#payslip_header
+    {
+        overflow: hidden;
+        width: 750px;
+        margin: 0 auto;
+        font-family: Verdana, Geneva, sans-serif;   
+        padding: 10px;
+    }
+    #left_header
+        {
+            overflow: hidden;
+            float: left;
+            width: 350px;
+            margin-left: 25px;
+        }
+        #left_header h1
+            {
+                background: url('images/payslip_logo.png') no-repeat transparent 0 0 scroll;
+                width: 289px;
+                height: 106px;
+            }
+            #left_header h1 a
+                {
+                    display: block;
+                    width: 289px;
+                    height: 106px;
+                    font-size: 0px;
+                }
+    #right_header
+        {
+            overflow: hidden;
+            float: left;
+            width: 350px;
+        }
+        #right_header h5
+            {
+                float: right;
+                font-size: 14px;
+                margin-top: 111px;
+            }
+    #payslip_content
+        {
+            width: 750px;
+            margin-left: 25px;
+            font-family: Verdana, Geneva, sans-serif;
+            padding: 0 10px 10px 10px;
+        }
+        #left_content
+            {
+                overflow: hidden;
+                float: left;
+                width: 350px;
+            }
+            #left_content h3
+                {
+                    overflow: hidden;
+                    background: #585858;
+                    font-size: 14px;
+                    padding: 2px 2px 5px 10px;
+                    color: #ffffff;
+                    margin-top: 10px;
+                }
+                    span#left_span
+                        {
+                         float: left;   
+                        }
+                    span#right_span
+                        {
+                            float: right;
+                            margin-right: 90px;
+                        }
+            #left_content h2
+                {
+                    font-size: 15px;
+                    margin: -13px 0 15px 50px;
+                    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                }
+    #employee_name
+        {
+            background: #585858;
+            font-weight: bold;
+            font-size: 14px;
+            color: #ffffff;
+            padding:  2px 2px 5px 10px;
+            margin-top: -5px;
+        }
+    #actual_employee
+        {
+            overflow: hidden;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 0 0 10px;
+        }
+    #item_amount
+        {
+            overflow: hidden;
+            float: left;
+            font-size: 14px;
+            background: #585858;
+            font-weight: bold;
+            width: 350px;
+            color: #ffffff;
+            padding:  2px 2px 5px 10px;
+        }
+    #item_allowance
+        {
+            overflow: hidden;
+            float: left;
+            font-size: 14px;
+            background: #585858;
+            font-weight: bold;
+            width: 350px;
+            margin-top: 10px;
+            color: #ffffff;
+            padding:  2px 2px 5px 10px;
+        }
+        #item_deduction
+            {
+                overflow: hidden;
+                float: left;
+                font-size: 14px;
+                background: #585858;
+                font-weight: bold;
+                width: 350px;
+                margin-top: 26px;
+                color: #ffffff;
+                padding:  2px 2px 5px 10px;
+            }
+        #item_goverment
+            {
+                overflow: hidden;
+                float: left;
+                font-size: 14px;
+                background: #585858;
+                font-weight: bold;
+                width: 350px;
+                margin-top: 51px;
+                color: #ffffff;
+                padding:  2px 2px 5px 10px;
+            }
+        #item_group
+            {
+                overflow: hidden;
+                float: left;
+                width: 150px;
+                padding:  2px 2px 5px 10px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        #item_group_right
+            {
+                overflow: hidden;
+                float: left;
+                font-size: 14px;
+                font-weight: bold;
+                height: 25px;
+                margin-top: 10px;
+            }
+        #item_group2
+            {
+                overflow: hidden;
+                float: left;
+                width: 233px;
+                margin-top: -9px;
+                padding:  2px 2px 5px 10px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        #item_group_right2
+            {
+                overflow: hidden;
+                float: left;
+                font-size: 14px;
+                font-weight: bold;
+                height: 25px;
+            }
+            #item_group_right span
+                {
+                    margin-top: 10px;
+                }
+    #item_content
+        {
+            margin: 1px 0 10px 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    #item_content_01
+        {
+            margin: 0 0 0 30px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    #item_content_02
+        {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    #item_position
+        {
+            overflow: hidden;
+            float: left;
+            font-size: 14px;
+            background: #585858;
+            font-weight: bold;
+            width: 350px;
+            margin-top: 10px;
+            color: #ffffff;
+            padding:  2px 2px 5px 10px;
+        }
+        #span_left
+            {
+                overflow: hidden;
+                float: left;
+            }
+            #h4_left
+                {  
+                    float: left;
+                    width: 190px;
+                    margin-top:5px;
+                }
+            #h4_right
+                {
+                    float: right;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                }
+#right_content
+    {
+        overflow: hidden;
+        float: left;
+        width: 350px;
+        margin-left: 20px;
+        
+    }
+#details_overtime
+    {
+        overflow: hidden;
+        float: left;
+        width: 340px;
+    }
+#details_overtime2
+    {
+        overflow: hidden;
+        float: right;
+        width: 130px;
+    }
+    #actual_payslip2
+        {
+            float: left;
+        }
+        #overtime_detail2
+            {
+                float: right;
+            }
+#footer_netpay
+    {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 750px;
+        text-align: center;
+    }
+    #netpay_text
+        {
+            overflow: hidden;
+            float: left;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            background: #585858;
+            color: #ffffff;
+            width: 330px;
+            text-align: center;
+            padding: 3px 20px 5px 2px;
+            margin-top: 20px;
+            margin-left: 215px;
+            margin-bottom: 20px;
+            
+        }
+    #ghost
+        {
+            font-size: 0px;
+        }
+#item_content_allowance
+    {
+        overflow: hidden;
+        float: left;
+        width: 200px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_allowance
+        {
+            overflow: hidden;
+            float: left;
+            margin-top:5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_employee_name
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    }
+    #item_actual_employee
+        {
+            overflow: hidden;
+            float: left;
+            margin-top:5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_employee_id
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_id
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            margin-top:5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_tax_status
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_tax
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            margin-top:5px;
+            margin-bottom: 5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_semi_monthly
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_monthly
+        {
+            overflow: hidden;
+            float: left;
+            margin-top:5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_hourly_rate
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actualy_hourly
+        {
+            overflow: hidden;
+            float: left; 
+            margin-top:5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_total_taxable
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_taxable
+        {
+            overflow: hidden;
+            float: left;
+            margin-top:5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_nontaxable
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin-top:5px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_nontaxable
+        {
+            overflow: hidden;
+            float: left;
+            margin-top:5px;
+            margin-bottom: 5px;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_payperiod
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    }
+    #item_actual_payperiod
+        {
+            overflow: hidden;
+            float: left;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+            margin: 2px 0 0 10px;
+            font-size: 14px;
+        }
+#item_work_tittle
+    {
+        overflow: hidden;
+        float: left;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+        font-size: 14px;
+        margin: 0 0 0 10px;
+    }
+#item_nd_pay
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_nd_pay
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_Holiday_pay
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_holiday_pay
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_regular_ot
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_regular_ot
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_6th_day_ot
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+#item_7th_day_ot
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_7th_day_ot
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_lates_and_absences
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_lates_and_absences
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_sss
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+    #item_actual_sss
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_hdmf
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold; 
+    }
+    #item_actual_hdmf
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_phic
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold; 
+    }
+    #item_actual_phic
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_tax_witheld
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold; 
+    }
+    #item_actual_tax_witheld
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+#item_loans
+    {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold; 
+    }
+    #item_actual_loans
+        {
+            overflow: hidden;
+            float: left;
+            font-weight: normal;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+/*--------------------------item content----------------------------*/
+#item_content_employee_id, #item_content_tax_status, #item_content_sime_monthly, #item_content_hourly_rate, #item_content_item_total_taxable,
+#item_content_sss, #item_content_hdmf, #item_content_phic, #item_content_tax_witheld, #item_content_loans
+    {
+        overflow: hidden;
+        float: left;
+        width: 335px;
+        margin: 0 0 0 10px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 14px;
+    }
+    
+#item_content_nd_pay, #item_content_nontaxable, #item_content_additional_allowance, #item_content_7th_day_ot, #item_content_lates_and_absences
+    {
+        overflow: hidden;
+        float: left;
+        width: 335px;
+        margin: 5px 0 0 10px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 14px;
+    }
+#item_content_holiday_pay
+    {
+        overflow: hidden;
+        float: left;
+        width: 335px;
+        margin: 5px 0 0 10px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 14px;
+    }
+#item_content_regular_ot
+    {
+        overflow: hidden;
+        float: left;
+        width: 335px;
+        margin: 5px 0 0 10px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 14px; 
+    }
+#item_content_6th_day_ot
+    {
+        overflow: hidden;
+        float: left;
+        width: 335px;
+        margin: 5px 0 0 10px;
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        font-size: 14px; 
+    }
+/*-----------------------------------selectagent.php------------------------------*/
+body#body_wrapper
+    {
+        margin-top: 20px;
+        margin-left: 12px;
+    }
+div#border_wrapper
+    {
+        margin: 0 auto;
+        width: 800px;
+        border: 1px solid #000000;
+        background: #ffffff;
+    }
+div#header_wrapper
+    {
+        margin: 0 auto;
+        width: 780px;
+    }
+table#select_wrapper
+    {
+        margin: 0 auto;
+        width: 780px;
+        text-align: center;
+        border: 1px solid #fffff;
+    }
+    td#title_header
+        {
+            background: #585858;
+            color: #ffffff;
+        }
+    td#select_content
+        {
+            background: #cfcfcf;
+        }
+td#ghost_td
+    {
+        background: #ffffff;;
+        font-size: 0px;
+    }
+/*-------------------------------------Select Agent Hours-------------------------*/
+body#agent_hours_body
+    {
+        margin-left: 12px;
+    }
+div#agent_hours_wrapper
+    {
+        margin: 0 auto;
+        width: 800px;
+        border: 1px solid #000000;
+    }
+/*-------------------------------------additional css ----------------------------*/
+/*-------------------------------------Select Agent Hours-------------------------*/
+#copyright_lastpage
+    {
+        color: #9f9f9f;
+        text-align: center;
+        font-family: Consolas,monaco,monospace;
+    }
+    

@@ -1,0 +1,81 @@
+<?php
+$con = mysql_connect("localhost", "root", "qwerty123");
+  if (!$con)
+      {
+       die('Could not connect: ' . mysql_error());
+      }
+mysql_select_db("VectorBPO",$con);
+
+$myusername=$_POST['agentid'];
+$mypassword=$_POST['password'];
+
+
+$myusername = stripslashes($myusername);
+$mypassword = stripslashes($mypassword);
+$myusername = mysql_real_escape_string($myusername);
+$mypassword = mysql_real_escape_string($mypassword);
+
+session_start();
+$result = mysql_query("SELECT * FROM paylogin WHERE Username='$myusername' and Password='$mypassword'");
+
+$row = mysql_num_rows($result);
+$rowdata = mysql_fetch_array($result);
+if( $row == '1' ){
+$_SESSION['Username'] = $myusername;
+$_SESSION['Code'] = $myusername;
+$_SESSION['Password'] = $mypassword;
+$_SESSION['Level'] = $rowdata['Level'];
+
+header("location:vector.php");
+}
+else {
+mysql_close($con); ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Log In</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="stylelog.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+#login {	color: #000;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive;
+}
+-->
+</style>
+</head>
+<body>
+<div id="layer01_holder">
+  <div id="left"></div>
+  <div id="center"></div>
+  <div id="right"></div>
+</div>
+
+<div id="layer02_holder">
+  <div id="left"></div>
+  <div id="center"></div>
+  <div id="right"></div>
+</div>
+<div id="layer03_holder">
+<div id="left"></div>
+<div id="left"></div>
+  <div id="center" align="CENTER">
+	<p>Please log in to add or make changes!</p>
+	  <p> LOG IN FAILED!</p>
+	  <p><a href="index.php">Back</a></p>
+  </div>
+</div>
+<!-- end #center -->
+<div style="clear: both;">&nbsp;</div>
+
+<div id="layer05_holder" align="center">
+  Copyright © 2010, Vector BPO. Powered by <img src="images/animated_favicon1.gif" border="0" />
+</div>
+</body>
+</html>
+
+<?php } ?>

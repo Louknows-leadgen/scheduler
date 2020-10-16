@@ -1,0 +1,181 @@
+[10-Jul-2018 18:51:45 UTC] PHP Fatal error:  Class 'Form' not found in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 9
+[11-Jul-2018 14:45:42 UTC] PHP Fatal error:  Class 'Form' not found in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 9
+[11-Jul-2018 15:01:05 UTC] PHP Fatal error:  Cannot use Illuminate\Routing\Controller as Controller because the name is already in use in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 4
+[11-Jul-2018 15:01:12 UTC] PHP Fatal error:  Cannot use Illuminate\Routing\Controller as Controller because the name is already in use in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 4
+[11-Jul-2018 15:08:41 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 36
+[11-Jul-2018 15:19:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 35
+[11-Jul-2018 15:50:54 UTC] PHP Parse error:  syntax error, unexpected '6' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 88
+[11-Jul-2018 16:02:32 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 82
+[12-Jul-2018 17:00:38 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/Auth/AuthController.php on line 59
+[09-Aug-2018 19:16:49 UTC] PHP Parse error:  syntax error, unexpected '$protected' (T_VARIABLE), expecting function (T_FUNCTION) in /home/digicono/public_html/payroll/pay/app/Models/ViciUser.php on line 7
+[09-Aug-2018 19:29:55 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/ac2acf1c43312b719af4f74243c6792f on line 23
+[02-Oct-2018 17:15:34 UTC] PHP Fatal error:  Can't use method return value in write context in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 87
+[02-Oct-2018 17:15:55 UTC] PHP Fatal error:  Can't use method return value in write context in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 87
+[02-Oct-2018 17:16:01 UTC] PHP Fatal error:  Can't use method return value in write context in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 87
+[02-Oct-2018 17:16:29 UTC] PHP Fatal error:  Can't use method return value in write context in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 87
+[02-Oct-2018 17:16:34 UTC] PHP Fatal error:  Can't use method return value in write context in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 87
+[02-Oct-2018 17:17:19 UTC] PHP Fatal error:  Can't use method return value in write context in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 87
+[02-Oct-2018 17:19:07 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 95
+[02-Oct-2018 17:19:31 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 96
+[02-Oct-2018 17:19:43 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 96
+[02-Oct-2018 17:19:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 99
+[02-Oct-2018 17:20:17 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 88
+[02-Oct-2018 17:20:28 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 99
+[02-Oct-2018 18:19:20 UTC] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/1cf62d1675b9ae3463c797dcb3ef6829 on line 11
+[02-Oct-2018 18:28:04 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/digicono/public_html/payroll/pay/storage/framework/views/1cf62d1675b9ae3463c797dcb3ef6829 on line 17
+[02-Oct-2018 19:11:13 UTC] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 102
+[02-Oct-2018 19:13:31 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 107
+[02-Oct-2018 19:14:58 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/PayrollController.php on line 150
+[25-Jan-2019 09:38:55 UTC] PHP Fatal error:  Call to undefined function assets() in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 5
+[25-Jan-2019 20:13:43 UTC] PHP Parse error:  syntax error, unexpected 'ID' (T_STRING) in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 45
+[25-Jan-2019 20:15:15 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 45
+[25-Jan-2019 20:17:10 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 20
+[25-Jan-2019 20:17:23 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 179
+[25-Jan-2019 20:17:30 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 20
+[25-Jan-2019 20:42:10 UTC] PHP Parse error:  syntax error, unexpected '6' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/f24e4b16ed58156185e157ad085fca61 on line 90
+[25-Jan-2019 20:43:06 UTC] PHP Parse error:  syntax error, unexpected '7' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/f24e4b16ed58156185e157ad085fca61 on line 96
+[25-Jan-2019 20:43:08 UTC] PHP Parse error:  syntax error, unexpected '7' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/f24e4b16ed58156185e157ad085fca61 on line 96
+[28-Jan-2019 19:01:16 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 16
+[11-Feb-2019 16:46:36 UTC] PHP Parse error:  syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 46
+[11-Feb-2019 16:46:49 UTC] PHP Parse error:  syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 42
+[11-Feb-2019 16:47:00 UTC] PHP Parse error:  syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 42
+[11-Feb-2019 16:47:05 UTC] PHP Parse error:  syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/98203549595277549f5d350fef19563f on line 42
+[11-Feb-2019 19:42:18 UTC] PHP Parse error:  syntax error, unexpected '$payperiods' (T_VARIABLE) in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 39
+[11-Feb-2019 19:42:22 UTC] PHP Parse error:  syntax error, unexpected '$payperiods' (T_VARIABLE) in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 39
+[21-Feb-2019 16:45:31 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 85
+[21-Feb-2019 16:45:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 85
+[21-Feb-2019 17:28:11 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 68
+[21-Feb-2019 17:28:22 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 68
+[21-Feb-2019 17:28:23 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 68
+[21-Feb-2019 17:28:42 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 78
+[21-Feb-2019 17:28:44 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 78
+[21-Feb-2019 17:29:02 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 78
+[21-Feb-2019 17:29:03 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 78
+[21-Feb-2019 17:30:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 78
+[21-Feb-2019 17:32:38 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 71
+[21-Feb-2019 17:33:16 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/1f1d0370b33b1669fc84aab64f4c8e61 on line 71
+[26-Feb-2019 13:43:29 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 80
+[26-Feb-2019 13:45:02 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 80
+[26-Feb-2019 13:45:06 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 80
+[26-Feb-2019 13:46:33 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 80
+[26-Feb-2019 13:46:38 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 80
+[01-Mar-2019 18:18:19 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 117
+[01-Mar-2019 22:33:27 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 23
+[01-Mar-2019 22:33:27 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 23
+[01-Mar-2019 22:33:39 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 23
+[01-Mar-2019 22:33:43 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 23
+[07-Mar-2019 18:50:24 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 23
+[07-Mar-2019 18:50:27 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 23
+[07-Mar-2019 18:50:41 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 23
+[07-Mar-2019 18:55:38 UTC] PHP Parse error:  syntax error, unexpected '6' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/digicono/public_html/payroll/pay/storage/framework/views/2a5bdb99d749789fb7916e3dce4c074b on line 46
+[07-Mar-2019 23:37:53 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:37:55 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:38:06 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:39:07 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:39:22 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:39:26 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:39:28 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:39:34 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:40:04 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:42:57 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:43:03 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:45:44 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:47:13 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:47:42 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:47:47 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:48:04 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:48:08 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:48:18 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:48:20 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:48:58 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:16 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:19 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:35 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:44 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:47 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:50 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:52 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:49:54 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:50:27 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:51:05 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:51:22 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:51:23 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:51:30 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:51:33 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:51:50 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:51:56 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:52:00 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:52:05 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:53:01 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[07-Mar-2019 23:55:14 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:02:34 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:26:31 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:26:54 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:29:16 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:29:33 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:33:10 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:33:17 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:33:43 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:33:48 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:37:46 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:41:41 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:49:33 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:55:46 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 00:56:27 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:03:57 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:03:58 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:04:00 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:19:48 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:20:18 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:34:24 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:45:31 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:45:36 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 01:49:45 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:09:02 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:09:02 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:09:08 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:09:08 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:31:43 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:31:48 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:49:44 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:49:44 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:56:16 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 04:57:58 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:03:22 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:03:35 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:04:09 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:04:17 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:04:26 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:04:33 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:09:09 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 05:16:54 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 06:52:18 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 06:52:31 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 06:52:40 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 06:53:05 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 07:02:26 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 08:23:02 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 08:46:01 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 08:46:18 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 08:48:48 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 09:09:28 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 09:17:52 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 09:19:15 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 11:15:43 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 11:51:05 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 11:51:06 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 12:49:26 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 12:49:28 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 12:49:29 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 13:19:57 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 13:20:44 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 13:20:46 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 13:21:06 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/digicono/public_html/payroll/pay/app/Http/Controllers/HomeController.php on line 115
+[08-Mar-2019 13:51:07 UTC] PHP Parse error:  syntax error, unexpected 'target' (T_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132
+[08-Mar-2019 13:51:12 UTC] PHP Parse error:  syntax error, unexpected 'target' (T_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132
+[08-Mar-2019 13:51:26 UTC] PHP Parse error:  syntax error, unexpected 'target' (T_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132
+[08-Mar-2019 13:51:29 UTC] PHP Parse error:  syntax error, unexpected 'target' (T_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132
+[08-Mar-2019 13:51:30 UTC] PHP Parse error:  syntax error, unexpected 'target' (T_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132
+[08-Mar-2019 13:51:31 UTC] PHP Parse error:  syntax error, unexpected 'target' (T_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132
+[08-Mar-2019 13:51:39 UTC] PHP Parse error:  syntax error, unexpected 'target' (T_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132
+[08-Mar-2019 13:51:58 UTC] PHP Parse error:  syntax error, unexpected ''target'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/digicono/public_html/payroll/pay/storage/framework/views/01bba221c42669197f8ac570533b8114 on line 132

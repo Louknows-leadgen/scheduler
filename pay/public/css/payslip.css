@@ -1,0 +1,69 @@
+  body {
+ 
+        background-size: 100% 110% !important;
+        background-repeat: no-repeat !important;
+  }
+
+  table{
+    
+    width: 98%;
+    margin-left: 25px;      
+
+  }
+
+  h1, h3, h2{
+        text-align: center;
+
+      }
+ 
+
+      table td{
+      
+        padding: 8px;
+        
+    }
+
+    .payslip-detail{
+  
+      padding-right: 200px;
+
+    }
+ 
+      .tbl-header{
+
+        background-color: #D3D3D3;
+
+      }
+
+
+      #income_summary{
+
+        margin-left: 25px;     
+
+        width: 500px;
+      
+      }
+  
+    #payslip-header{
+
+      text-align: center;
+      width: 100%;
+      height: 250px;
+
+    }
+
+    #emp_pay_summary-table{
+
+      margin-top: 210px;
+
+    }
+
+    @media print {    
+
+      #emp_pay_summary-table{
+
+        margin-top: 0px;
+      }
+      
+    }
+ 

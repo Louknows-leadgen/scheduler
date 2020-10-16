@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "*"
+  },
+  "dependencies": {
+    "escape-string-regexp": "~1.0.5",
+    "gulp-sass": "^4.0.1",
+    "node-gyp": "^3.8.0",
+    "node-sass": "^4.9.3"
+  }
+}
