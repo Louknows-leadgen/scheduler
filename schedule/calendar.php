@@ -9,6 +9,7 @@
 	$ppayperiod=$_POST['payperiod'];
 	$pyear=$_POST['year']; 
 	$approve=0;
+	$message = '';
 
 	$checkifapproved=mysqli_query($con,"select * from approved_payperiods where payperiod='".$pyear."-".$pmonth."-".$ppayperiod."' and employeeid='".$_POST['employeeid']."'");
 	$checknum=mysqli_num_rows($checkifapproved);
@@ -28,14 +29,14 @@
 <link rel="shortcut icon" href="../favicon.ico" >
 <link rel="icon" type="image/gif" href="../images/animated_favicon1.gif" >
 
-<script type="text/javascript" src="js/jquery.js" defer></script>
-<script type="text/javascript" src="js/jquery-1.4.2.js" defer></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
 
-<script type="text/javascript" src="js/jquery.ui.js" defer></script>
+<script type="text/javascript" src="js/jquery.ui.js"></script>
 <?php if($approve!='1'){ ?>
-<script type="text/javascript" src="js/jquery.editinplace.js" defer></script>
+<script type="text/javascript" src="js/jquery.editinplace.js"></script>
 <?php } ?>
-<script type="text/javascript" src="js/anytime.js" defer></script>
+<script type="text/javascript" src="js/anytime.js"></script>
 <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 <link rel="stylesheet" href="css/anytime.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 <style>
@@ -300,11 +301,18 @@ if(($_POST['month']!='' && $_POST['year']!='' && $_POST['employeeid']!='' && $_P
 						$startshift="".$year."-".$month."-".$x." ".$employeesked['starttime'];
 						$endshift="".$year."-".$month."-".$dayshiftendsuppose." ".$employeesked['endtime'];
 						
-					}	
+					}
+
+					$timein = isset($timein)   && !empty($timein)  && $timein != '0000-00-00 00:00:00' ? $timein : '1900-01-01 00:00:00';
+					$timeout = isset($timeout) && !empty($timeout) && $timeout != '0000-00-00 00:00:00' ? $timeout : '1900-01-01 00:00:00';
+					$earlytimedate = isset($earlytimedate) && !empty($earlytimedate) && $earlytimedate != '0000-00-00 00:00:00' ? $earlytimedate : '1900-01-01 00:00:00';
+					$otstart = isset($otstart) && !empty($otstart) && $otstart != '0000-00-00 00:00:00' ? $otstart : '1900-01-01 00:00:00';
+					$otend = isset($otend)     && !empty($otend)   && $otend != '0000-00-00 00:00:00' ? $otend : '1900-01-01 00:00:00';
 
 					$insert="insert into timelog (`dates`,`shiftday`,`status`,`userid`,`skedin`,`skedout`,`timein`,`timeout`,`earlytimedate`,`startshift`,`endshift`,`otstart`,`otend`,`thisdaysshift`)values('".$year."-".$month."-".$x."','".$day."','".$status."','".$userid."','".$startskeddaw."','".$endskeddaw."','".$timein."','".$timeout."','".$earlytimedate."','".$startshift."','".$endshift."','".$otstart."','".$otend."','".$schedule."')";
 					echo $insert."<br>";
 					mysqli_query($con,$insert);
+
 					header('location:calendar.php?month='.$_POST['month'].'&year='.$_POST['year'].'&employeeid='.$_POST['employeeid'].'&payperiod='.$_POST['payperiod'].'&agentname='.$_POST['agentname'].'&agenltname='.$_POST['agenltname'].'');
 						//echo "asdasd";
 						//echo '<META HTTP-EQUIV="refresh" CONTENT="0; URL=calendar.php">'; 
