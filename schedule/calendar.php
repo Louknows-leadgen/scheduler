@@ -4,21 +4,19 @@
 	ob_start();
 
 	include('db_connect.php');
+	include('helper.php');
 
-	$pmonth=$_POST['month'];
-	$ppayperiod=$_POST['payperiod'];
-	$pyear=$_POST['year']; 
+	$month = isset($_POST['month']) ? $_POST['month'] : $_GET['month'];
+	$payperiod = isset($_POST['payperiod']) ? $_POST['payperiod'] : $_GET['payperiod'];
+	$year = isset($_POST['year']) ? $_POST['year'] : $_GET['year'];
+	$agentname = isset($_POST['agentname']) ? $_POST['agentname'] : $_GET['agentname'];
+	$agenltname = isset($_POST['agenltname']) ? $_POST['agenltname'] : $_GET['agenltname'];
+	$userid = isset($_POST['employeeid']) ? $_POST['employeeid'] : $_GET['employeeid'];
+
 	$approve=0;
 	$message = '';
 
-	// Lou1
-	$schedule=$_POST['schedule'];
-	$month=$_POST['month'];
-	$year=$_POST['year'];
-	$userid=$_POST['employeeid'];
-	//
-
-	$checkifapproved=mysqli_query($con,"select * from approved_payperiods where payperiod='".$pyear."-".$pmonth."-".$ppayperiod."' and employeeid='".$_POST['employeeid']."'");
+	$checkifapproved=mysqli_query($con,"select * from approved_payperiods where payperiod='".$year."-".$month."-".$payperiod."' and employeeid='".$userid."'");
 	$checknum=mysqli_num_rows($checkifapproved);
 
 	if($checknum>=1){
@@ -32,7 +30,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo isset($_POST['employeeid']) ? $_POST['employeeid'] : $_GET['employeeid']?> - <?php echo isset($_POST['agentname']) ? $_POST['agentname'] : '' ?> <?php echo isset($_POST['agenltname']) ? $_POST['agenltname'] : '' ?> <?php echo isset($_GET['agentname']) ? $_GET['agentname'] : '' ?> <?php echo isset($_GET['agenltname']) ? $_GET['agenltname'] : '' ?>'s Schedule</title>
+<title><?php echo $userid ?> - <?php echo join(' ',[$agentname,$agenltname]) ?>'s Schedule</title>
 <link rel="shortcut icon" href="../favicon.ico" >
 <link rel="icon" type="image/gif" href="../images/animated_favicon1.gif" >
 
@@ -72,67 +70,23 @@ body,td,th {
 <body>
 <?php
 
+if(!empty($month) && !empty($year) && !empty($userid) && !empty($payperiod)){
+	if($payperiod == '10'){ 
+		$startday=16;
 
-if(((isset($_POST['month']) && !empty($_POST['month'])) && (isset($_POST['year']) && !empty($_POST['year'])) && (isset($_POST['employeeid']) && !empty($_POST['employeeid'])) && (isset($_POST['payperiod']) && !empty($_POST['payperiod']))) || ((isset($_GET['month']) && !empty($_GET['month'])) && (isset($_GET['year']) && !empty($_GET['year'])) && (isset($_GET['employeeid']) && !empty($_GET['employeeid'])) && (isset($_GET['payperiod']) && !empty($_GET['payperiod'])))){
-
-	if(isset($_GET['employeeid']) && !empty($_GET['employeeid'])){
-		$month=$_GET['month'];
-		$year=$_GET['year'];
-		$userid=$_GET['employeeid'];
-
-		if($_GET['payperiod']=='10'){ 
-			$startday=16;
-	
-			if($month=='01'){
-				$month='12';
-				$year=$_GET['year']-1;
-			}else{
-				$month=$month-1;
-			}	
-
-		    $days_in_month=30;
-			$enddays=30;
-			echo "'.$startday.'";
-			echo "'.$startday.'";
+		if($month == '01'){
+			$month = '12';
+			$year = $year - 1;
 		}else{
-			$startday=1;
-			$enddays=15;
-			echo "'.$startday.'";
-			echo "'.$startday.'";
-		}
-	}else{		
-		$getscheduletime=mysqli_query($con,"SELECT * FROM `groupschedule` where groupschedulename='".$schedule."'");
-		
-		while($rowskedtime=mysqli_fetch_array($getscheduletime)){
-			$starttime=$rowskedtime['starttime'];
-			$endtime=$rowskedtime['endtime'];
-			$otherday=$rowskedtime['otherday'];
-			echo $otherday;
-		}	 				
-			
-		// Lou1
-		// $schedule=$_POST['schedule'];
-		// $month=$_POST['month'];
-		// $year=$_POST['year'];
-		// $userid=$_POST['employeeid'];
-
-		if($_POST['payperiod']=='10'){ 
-			$startday=16;
-	
-			if($month=='01'){
-				$month='12';
-				$year=$_POST['year']-1;
-			}else{
-				$month=$month-1;
-			}	
-			
-			$days_in_month=30;
-			$enddays=$days_in_month;
-		}else{
-			$startday=1;	
-			$enddays=15;
+			$month = $month - 1;
 		}	
+
+		$enddays=30;
+	}else{
+		$startday=1;
+		$enddays=15;
 	}
+	
 
 ?>
 
@@ -141,7 +95,7 @@ if(((isset($_POST['month']) && !empty($_POST['month'])) && (isset($_POST['year']
 		<tr bgcolor="#999999">
 			<td colspan="9">
 				<strong>
-					<?php echo isset($_POST['employeeid']) ? $_POST['employeeid'] : $_GET['employeeid']?> - <?php echo isset($_POST['agentname']) ? isset($_POST['agentname']) : '' ?> <?php echo isset($_POST['agenltname']) ? $_POST['agenltname'] : '' ?> <?php echo isset($_GET['agentname']) ? $_GET['agentname'] : '' ?> <?php echo isset($_GET['agenltname']) ? $_GET['agenltname'] : '' ?>
+					<?php echo $userid ?> - <?php echo join(' ',[$agentname,$agenltname]) ?>
 				</strong>
 			</td>
 		</tr>
@@ -322,7 +276,7 @@ if(((isset($_POST['month']) && !empty($_POST['month'])) && (isset($_POST['year']
 					echo $insert."<br>";
 					mysqli_query($con,$insert);
 
-					header('location:calendar.php?month='.$_POST['month'].'&year='.$_POST['year'].'&employeeid='.$_POST['employeeid'].'&payperiod='.$_POST['payperiod'].'&agentname='.$_POST['agentname'].'&agenltname='.$_POST['agenltname'].'');
+					header('location:calendar.php?month='.$month.'&year='.$year.'&employeeid='.$userid.'&payperiod='.$payperiod.'&agentname='.$agentname.'&agenltname='.$agenltname);
 						//echo "asdasd";
 						//echo '<META HTTP-EQUIV="refresh" CONTENT="0; URL=calendar.php">'; 
 						//exit();
