@@ -4,17 +4,19 @@
 
 <?php
 	include("db_connect.php");
-	$pmonth=$_POST['month'];
-	$ppayperiod=$_POST['payperiod'];
-	$pyear=$_POST['year']; 
-	$approve=0;
-	echo "select * from approved_payperiods where payperiod='".$pyear."-".$pmonth."-".$ppayperiod."' and employeeid='".$_POST['employeeid']."'";
-	$checkifapproved=mysqli_query($con,"select * from approved_payperiods where payperiod='".$pyear."-".$pmonth."-".$ppayperiod."' and employeeid='".$_POST['employeeid']."'");
-	$checknum=mysqli_num_rows($checkifapproved);
+	$pmonth = $_POST['month'];
+	$ppayperiod = $_POST['payperiod'];
+	$pyear = $_POST['year']; 
+	$approve = 0;
+	$message = '';
+	// echo "select * from approved_payperiods where payperiod='".$pyear."-".$pmonth."-".$ppayperiod."' and employeeid='".$_POST['employeeid']."'";
+	$checkifapproved = mysqli_query($con,"select * from approved_payperiods where payperiod='".$pyear."-".$pmonth."-".$ppayperiod."' and employeeid='".$_POST['employeeid']."'");
 
-	if($checknum>=1){
-		$message="This has already been approved";
-		$approve='1';
+	$checknum = mysqli_num_rows($checkifapproved);
+
+	if($checknum >= 1){
+		$message = "This has already been approved";
+		$approve = '1';
 	}
 ?>
 
@@ -73,7 +75,7 @@
 		$startday=1;
 
 		$days_in_month=31;
-		echo $_POST['payperiod'];
+		// echo $_POST['payperiod'];
 		
 		if($days_in_month=='31'){
 			$deducteddays='16';
@@ -96,7 +98,7 @@
 
 
 	$gettimes="select timelog.*,prlemployeemaster.employeeid,prlemployeemaster.schedule from timelog,prlemployeemaster where prlemployeemaster.employeeid=timelog.userid and timelog.userid='".$_POST['employeeid']."' and timelog.dates>='".$starting."' and timelog.dates<='".$ending."' order by dates asc";
-	echo $gettimes;
+	// echo $gettimes;
 
 	$gettimes=mysqli_query($con,$gettimes);
 	while($rowtimelogs=mysqli_fetch_array($gettimes)){
@@ -108,7 +110,7 @@
 		$skedout=$rowtimelogs['skedout'];
 		$startshift=$rowtimelogs['startshift'];
 		$endshift=$rowtimelogs['endshift'];
-		$otherday=$rowtimelogs['otherday'];
+		// $otherday=$rowtimelogs['otherday'];
 		$datetomorrow = date('Y-m-d', strtotime($dates) + 86400);
 		$dateyesterday = date('Y-m-d', strtotime($dates) - 86400);
 
@@ -367,7 +369,11 @@
 			$todaynightdiffhours=0;
 
 			//calculate early time
-			if($earlytime!='0000-00-00 00:00:00' || $strearlytime<$str_earlytime){
+			// if($earlytime!='0000-00-00 00:00:00' || $strearlytime<$str_earlytime){
+			// 	$early=($strtime_in-$str_earlytime)/3600;
+			// }
+
+			if($earlytime!='0000-00-00 00:00:00'){
 				$early=($strtime_in-$str_earlytime)/3600;
 			}
 				
@@ -469,13 +475,14 @@
 						
 					if($strtodaymidnight<$strtime_in ){
 							//echo $todaymidnight."<br>";
-							echo $dates." - here - ".$todaymidnight."<br>";
+							// echo $dates." - here - ".$todaymidnight."<br>";
 							$todayworkinghourswithoutnightdiff=0;
 							$todaynightdiffhours=0;
 							$tomtimein=$strtime_in;
 					}else{
 						//echo $dates."=".$todaymidnight."=".$early_time_before_nightdiff."<br>";
-						echo "todate".$todayworkinghourswithoutnightdiff=$valid_time_before_nightdiff;
+						// echo "todate".
+						$todayworkinghourswithoutnightdiff=$valid_time_before_nightdiff;
 						$todaynightdiffhours=($todaytimeout-$strnightdiff_in)/3600;
 					}	
 					
@@ -642,7 +649,9 @@
 				}	
 ?> 
 				<tr <?php if($rowtimelogs['status']=='Vacation Leave' || $rowtimelogs['status']=='Wedding Leave' || $rowtimelogs['status']=='6th day OT' || $rowtimelogs['status']=='HOLI'){ echo "bgcolor='yellowgreen'";}?>  onMouseOver="this.className='highlight'" onMouseOut="this.className='normal'">
+		            <!-- Date -->
 		            <td><strong><?php echo $dates?></strong></td>
+		            <!-- Reg H -->
 		            <td>
 						<?php
 							//	echo $todayworkinghourswithoutnightdiff."-".$tomwithoutnightdiff." = ";
@@ -656,6 +665,7 @@
 							echo round($reghours,2);
 						?>
 		            </td>
+		            <!-- W/ ND -->
 		            <td>
 		            	<?php
 							//echo $todaynightdiffhours."+".$tomnightdiffhours."-".$late_hours." = <br>";
@@ -672,28 +682,38 @@
 							echo round($hourswithnightdiff,2);
 						?>
 					</td>
+					<!-- Early -->
 		            <td><?php echo round($early,2)?></td>
+		            <!-- Approved Early OT -->
 		            <td>
 		                <?php
+
+		                	$earlyz=0;
+							$regular_ot_hoursz=0;
+							$nightdiff_ot_hoursz=0;
+							$thisdateundertime=0;
+
 							if($approve=='1'){
 								//	echo "SELECT early,regular_ot_hours,nightdiff_ot_hours FROM `finalhourstable` where shiftdate='".$dates."' and userid='".$userid."' <br>";
 								$finalhourstable2=mysqli_query($con,"SELECT early,regular_ot_hours,nightdiff_ot_hours,undertime
 			FROM `finalhourstable` where shiftdate='".$dates."' and userid='".$userid."'");
 								
-								$earlyz=0;
-								$regular_ot_hoursz=0;
-								$nightdiff_ot_hoursz=0;
-								$thisdateundertime=0;
+								
 								while($rowfinalhourstable=mysqli_fetch_array($finalhourstable2)){
-									$thisdateundertime=$thisdateundertime+$rowfinalhourstable['undertime'];
-									$earlyz=$earlyz+$rowfinalhourstable['early'];
-									$regular_ot_hoursz=$regular_ot_hoursz+$rowfinalhourstable['regular_ot_hours'];
-									$nightdiff_ot_hoursz=$nightdiff_ot_hoursz+$rowfinalhourstable['nightdiff_ot_hours'];
+									$row_undertime = isset($rowfinalhourstable['undertime']) ? (float)$rowfinalhourstable['undertime'] : 0;
+									$row_early = isset($rowfinalhourstable['early']) ? (float)$rowfinalhourstable['early'] : 0;
+									$row_regular_ot_hours = isset($rowfinalhourstable['regular_ot_hours']) ? (float)$rowfinalhourstable['regular_ot_hours'] : 0;
+									$row_nightdiff_ot_hours = isset($rowfinalhourstable['nightdiff_ot_hours']) ? (float)$rowfinalhourstable['nightdiff_ot_hours'] : 0;
+									$thisdateundertime=$thisdateundertime+$row_undertime;
+									$earlyz=$earlyz+$row_early;
+									$regular_ot_hoursz=$regular_ot_hoursz+$row_regular_ot_hours;
+									$nightdiff_ot_hoursz=$nightdiff_ot_hoursz+$row_nightdiff_ot_hours;
 								}
 							}
 						?>
 		            	<input type="text" name="approveearly[]" style="font-size:11px; background-color:#B0F9A6" size="8" value="<?php if($earlyz!='' || $earlyz!='0'){ echo $earlyz; } else { echo "0";}?>" />
 		            </td>
+		            <!-- Late -->
 		          	<td <?php if($late_hours>0){ echo 'bgcolor="red"';} ?>>
 					  <?php
 					  	if($rowtimelogs['status']=='6th day OT'){
@@ -702,6 +722,7 @@
 					   	echo round($late_hours,2)
 					  ?>
 		          	</td>
+		          	<!-- Undertime -->
 		            <td <?php if($undertimehour>0){ echo "bgcolor='orange'";} ?>>
 		            	<?php 
 							//echo $thisdateundertime;.
@@ -757,6 +778,7 @@
 							//echo "<br>".$hourhour." =".$reghours."- ".$hourswithnightdiff."-".$deduct."-".$late_hours."<br>";
 						?>
 					</td>
+					<!-- Regular OT -->
 		            <td>
 		            	<?php 
 		            		if($rowtimelogs['status']=='6th day OT'){
@@ -765,6 +787,7 @@
 							echo round($Regulat_OT,2); 
 						?>
 					</td>
+					<!-- Approved Regular OT -->
 		            <td>
 		            	<?php
 		            		if($regular_ot_hoursz!='' || $regular_ot_hoursz!='0'){ 
@@ -777,6 +800,7 @@
 		            	?>
 		            	<input type="text" name="approve[]" style="font-size:11px; background-color:#B0F9A6" size="8"  value="<?php echo $regular_ot_hoursz ?>" />
 		            </td>
+		            <!-- OT w/ ND -->
 		      		<td>
 		      			<?php 
 		      				if($rowtimelogs['status']=='6th day OT'){
@@ -785,6 +809,7 @@
 							echo round($OT_with_night_diff,2); 
 						?>
 					</td>
+					<!-- Approved OT w/ ND -->
 		            <td>
 		            	<input type="text" name="approvewithnd[]" style="font-size:11px; background-color:#B0F9A6" size="8" value="<?php if($nightdiff_ot_hoursz!='' || $nightdiff_ot_hoursz!='0'){ echo $nightdiff_ot_hoursz; } else { echo "0";}?>" />
 		            </td>

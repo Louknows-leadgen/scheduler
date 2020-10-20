@@ -11,6 +11,13 @@
 	$approve=0;
 	$message = '';
 
+	// Lou1
+	$schedule=$_POST['schedule'];
+	$month=$_POST['month'];
+	$year=$_POST['year'];
+	$userid=$_POST['employeeid'];
+	//
+
 	$checkifapproved=mysqli_query($con,"select * from approved_payperiods where payperiod='".$pyear."-".$pmonth."-".$ppayperiod."' and employeeid='".$_POST['employeeid']."'");
 	$checknum=mysqli_num_rows($checkifapproved);
 
@@ -25,7 +32,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo $_POST['employeeid']?> <?php echo $_GET['employeeid']?> - <?php echo $_POST['agentname']?> <?php echo $_POST['agenltname']?> <?php echo $_GET['agentname']?> <?php echo $_GET['agenltname']?>'s Schedule</title>
+<title><?php echo isset($_POST['employeeid']) ? $_POST['employeeid'] : $_GET['employeeid']?> - <?php echo isset($_POST['agentname']) ? $_POST['agentname'] : '' ?> <?php echo isset($_POST['agenltname']) ? $_POST['agenltname'] : '' ?> <?php echo isset($_GET['agentname']) ? $_GET['agentname'] : '' ?> <?php echo isset($_GET['agenltname']) ? $_GET['agenltname'] : '' ?>'s Schedule</title>
 <link rel="shortcut icon" href="../favicon.ico" >
 <link rel="icon" type="image/gif" href="../images/animated_favicon1.gif" >
 
@@ -66,8 +73,9 @@ body,td,th {
 <?php
 
 
-if(($_POST['month']!='' && $_POST['year']!='' && $_POST['employeeid']!='' && $_POST['payperiod']!='')||($_GET['month']!='' && $_GET['year']!='' && $_GET['employeeid']!='' && $_GET['payperiod']!='')){
-	if($_GET['employeeid']!=''){
+if(((isset($_POST['month']) && !empty($_POST['month'])) && (isset($_POST['year']) && !empty($_POST['year'])) && (isset($_POST['employeeid']) && !empty($_POST['employeeid'])) && (isset($_POST['payperiod']) && !empty($_POST['payperiod']))) || ((isset($_GET['month']) && !empty($_GET['month'])) && (isset($_GET['year']) && !empty($_GET['year'])) && (isset($_GET['employeeid']) && !empty($_GET['employeeid'])) && (isset($_GET['payperiod']) && !empty($_GET['payperiod'])))){
+
+	if(isset($_GET['employeeid']) && !empty($_GET['employeeid'])){
 		$month=$_GET['month'];
 		$year=$_GET['year'];
 		$userid=$_GET['employeeid'];
@@ -102,10 +110,11 @@ if(($_POST['month']!='' && $_POST['year']!='' && $_POST['employeeid']!='' && $_P
 			echo $otherday;
 		}	 				
 			
-		$schedule=$_POST['schedule'];
-		$month=$_POST['month'];
-		$year=$_POST['year'];
-		$userid=$_POST['employeeid'];
+		// Lou1
+		// $schedule=$_POST['schedule'];
+		// $month=$_POST['month'];
+		// $year=$_POST['year'];
+		// $userid=$_POST['employeeid'];
 
 		if($_POST['payperiod']=='10'){ 
 			$startday=16;
@@ -132,7 +141,7 @@ if(($_POST['month']!='' && $_POST['year']!='' && $_POST['employeeid']!='' && $_P
 		<tr bgcolor="#999999">
 			<td colspan="9">
 				<strong>
-					<?php echo $_POST['employeeid']?> <?php echo $_GET['employeeid']?> - <?php echo $_POST['agentname']?> <?php echo $_POST['agenltname']?> <?php echo $_GET['agentname']?> <?php echo $_GET['agenltname']?>
+					<?php echo isset($_POST['employeeid']) ? $_POST['employeeid'] : $_GET['employeeid']?> - <?php echo isset($_POST['agentname']) ? isset($_POST['agentname']) : '' ?> <?php echo isset($_POST['agenltname']) ? $_POST['agenltname'] : '' ?> <?php echo isset($_GET['agentname']) ? $_GET['agentname'] : '' ?> <?php echo isset($_GET['agenltname']) ? $_GET['agenltname'] : '' ?>
 				</strong>
 			</td>
 		</tr>
@@ -409,9 +418,9 @@ if(($_POST['month']!='' && $_POST['year']!='' && $_POST['employeeid']!='' && $_P
 	echo "Please select month, payperiod and year";
 }
 	
-	print_r($datesshit);
-	echo "<br>";
-	print_r($datesshit2);
+	// print_r($datesshit);
+	// echo "<br>";
+	// print_r($datesshit2);
 
 ?>
 </body>

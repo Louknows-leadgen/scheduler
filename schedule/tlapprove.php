@@ -16,7 +16,7 @@ $approvewithnd=$_POST['approvewithnd'];
 $approveearly=$_POST['approveearly'];
 $employeeid=$_POST['employeeid'];
 $payperiod=$_POST['payperiod'];
-$status=$_POST['status'];
+// $status=$_POST['status'];
 
 //print_r($_POST['dates']);
 //print_r($approve);
@@ -83,33 +83,33 @@ for($x=0;$x<$counting;$x++){
 	//echo gethours
 	$gethours=mysqli_query($con,$gethours);
 	if($numcheckhours<=0){
-		$z=1;
+		// $z=1;
 			while($rowhours=mysqli_fetch_array($gethours))
 			{
-				if($z=='1')
-				{
+				// if($z=='1')
+				// {
 				
-				mysqli_query($con,"insert into finalhourstable(shiftdate,dates,userid,early,regular_hours,nightdiff_hours,regular_ot_hours,nightdiff_ot_hours,late, 	undertime,sixth_ot_hours,seventh_ot_hours,status) values ('".$rowhours['shiftdate']."','".$rowhours['dates']."','".$rowhours['userid']."','".$approveearly[$x]."','".$rowhours['regular_hours']."','".$rowhours['nightdiff_hours']."','0','0','".$rowhours['late']."','".$rowhours['undertime']."','".$rowhours['sixth_ot_hours']."','".$rowhours['seventh_ot_hours']."','".$rowhours['status']."')");
-				}
-				else{
+				// mysqli_query($con,"insert into finalhourstable(shiftdate,dates,userid,early,regular_hours,nightdiff_hours,regular_ot_hours,nightdiff_ot_hours,late, 	undertime,sixth_ot_hours,seventh_ot_hours,status) values ('".$rowhours['shiftdate']."','".$rowhours['dates']."','".$rowhours['userid']."','".$approveearly[$x]."','".$rowhours['regular_hours']."','".$rowhours['nightdiff_hours']."','0','0','".$rowhours['late']."','".$rowhours['undertime']."','".$rowhours['sixth_ot_hours']."','".$rowhours['seventh_ot_hours']."','".$rowhours['status']."')");
+				// }
+				// else{
 					
 					mysqli_query($con,"insert into finalhourstable(shiftdate,dates,userid,early,regular_hours,nightdiff_hours,regular_ot_hours,nightdiff_ot_hours,late, 	undertime,sixth_ot_hours,seventh_ot_hours,status) values ('".$rowhours['shiftdate']."','".$rowhours['dates']."','".$rowhours['userid']."','0','".$rowhours['regular_hours']."','".$rowhours['nightdiff_hours']."','".$approve[$x]."','".$approvewithnd[$x]."','".$rowhours['late']."','".$rowhours['undertime']."','".$rowhours['sixth_ot_hours']."','".$rowhours['seventh_ot_hours']."','".$rowhours['status']."')");
-					}
-			$z++;
+			// 		}
+			// $z++;
 			}
 	}
 	else{
-		$z=1;
+		// $z=1;
 			while($rowhours=mysqli_fetch_array($gethours))
 			{
-				if($z=='1')
-				{
-					mysqli_query($con,"update finalhourstable set early='".$approveearly[$x]."' where shiftdate='".$dates[$x]."' and userid='".$employeeid."'" );
-				}
-				else {
+				// if($z=='1')
+				// {
+				// 	mysqli_query($con,"update finalhourstable set early='".$approveearly[$x]."' where shiftdate='".$dates[$x]."' and userid='".$employeeid."'" );
+				// }
+				// else {
 					mysqli_query($con,"update finalhourstable set regular_ot_hours='".$approve[$x]."',nightdiff_ot_hours='".$approvewithnd[$x]."' where shiftdate='".$dates[$x]."' and userid='".$employeeid."' and dates='".$rowhours['dates']."'");
-					}
-			$z++;		
+			// 		}
+			// $z++;		
 			}
 	}
 

@@ -98,7 +98,7 @@
                 </select>
             </td>
             <td>
-                <form name="getdate<?php echo $rowemployee['employeeid']?>" id="form-<?php echo $rowemployee['employeeid']?>" method="post"  action="calendar.php" onsubmit="target_popup(this)">
+                <form name="getdate<?php echo $rowemployee['employeeid']?>" id="form-<?php echo $rowemployee['employeeid']?>" method="post"  action="calendar.php" onsubmit="target_popup(this,<?php echo $rowemployee['employeeid']?>)">
                     <input type="hidden" name="schedule" value="<?php echo $rowemployee['schedule']?>" />
                     <input type="hidden" name="employeeid" value="<?php echo $rowemployee['employeeid']?>" />
                     <input type="hidden" name="agentname" value="<?php echo $rowemployee['firstname']?>" />
@@ -114,9 +114,9 @@
 </table>
 
 <script>
-    function target_popup(form) {
-        window.open('', 'getdate<?php echo $rowemployee['employeeid']?>', 'width=1280,height=1000,resizeable,scrollbars');
-        form.target = 'getdate<?php echo $rowemployee['employeeid']?>';
+    function target_popup(form,employeeid) {
+        window.open('', 'getdate'+employeeid, 'width=1280,height=1000,resizeable,scrollbars');
+        form.target = 'getdate'+employeeid;
     }
 </script>
 
